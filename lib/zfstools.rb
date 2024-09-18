@@ -24,16 +24,12 @@ def snapshot_prefix_interval(interval)
   snapshot_prefix() + "_#{interval}-"
 end
 
-def snapshot_format
-  '%Y-%m-%d-%Hh%M'
-end
-
 ### Get the name of the snapshot to create
 def snapshot_name(interval)
   if $use_utc
-    date = Time.now.utc.strftime(snapshot_format + "U")
+    date = Time.now.utc.strftime("%Y.%m.%d-%H.%M.%S")
   else
-    date = Time.now.strftime(snapshot_format)
+    date = Time.now.strftime("%Y.%m.%d-%H.%M.%S")
   end
   snapshot_prefix_interval(interval) + date
 end
