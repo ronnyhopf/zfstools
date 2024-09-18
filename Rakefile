@@ -15,10 +15,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "zfstools"
-  gem.homepage = "http://github.com/bdrewery/zfstools"
+  gem.homepage = "https://github.com/ronnyhopf/zfstools"
   gem.license = "BSD"
   gem.summary = %Q{ZFSTools}
-  gem.description = %Q{ZFS admin scripts, such as automatic snapshots, mysql snapshotting, scrubbing, etc.}
+  gem.description = %Q{ZFS admin scripts, such as automatic snapshots, mysql snapshotting, scrubbing, etc. Folk of }
   gem.email = "bryan@shatow.net"
   gem.authors = ["Bryan Drewery"]
   # dependencies defined in Gemfile
